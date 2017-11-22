@@ -15,5 +15,6 @@ var server = http.createServer(onRequest).listen(listenPort);
  *
  */
 function onRequest(request, response) {
-  response.
+  response.writeHead(200);
+  response.end('Hi everybody');
 };
