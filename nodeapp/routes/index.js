@@ -1,7 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
+
 function getAuthCookie() {
+  // TODO Login API request
   return 'someotherstring';
 }
 
@@ -11,9 +13,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next){
-  // TODO Login API request
-  var auth_cookie = getAuthCookie();
-  req.session.cookie['auth'] = auth_cookie;
+  res.cookie('auth', getAuthCookie());
   res.redirect('/reset');
 });
 
