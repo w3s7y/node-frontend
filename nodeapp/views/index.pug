@@ -1,0 +1,18 @@
+extends layout
+
+
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 Reset Form
+
+        // login form
+        form(method='POST' action='/')
+          div.form-group
+            label(for='name') Name:
+              input#name.form-control(type='text', placeholder='userid' name='name')
+          div.form-group
+            label(for='pw') Password:
+              input#pw.form-control(type='password' name='password', placeholder='password')
+          button.btn.btn-primary(type='submit') Login
