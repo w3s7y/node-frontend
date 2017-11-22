@@ -1,11 +1,19 @@
+// The server listen port
+var listenPort = 8080;
+
+// Import the libraries we will need.
 var http = require('http');
+var session = require('client-sessions');
 
-var server = http.createServer(function(req, res) {
 
-res.writeHead(200);
+// Create a HTTP server object and listen to listenPort.
+// Farm requests off to the onRequest function.
+var server = http.createServer(onRequest).listen(listenPort);
 
-res.end('Hi everybody!');
-
-});
-
-server.listen(8080);
+/**
+ * The main server request function, this function is called EVERY HTTP request.
+ *
+ */
+function onRequest(request, response) {
+  response.
+};
