@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "Simple single page frontend application",
   "dependencies": {
-    "client-sessions": "^0.8.0",
     "http": "0.0.0"
   }
 }

@@ -13,5 +13,8 @@ block content
               input#name.form-control(type='text', placeholder='Hostname' name='host')
           div.form-group
             label(for='unlock') Unlock:
-              radio#unlock.form-control(type='radio' name='unlock')
+              input#unlock.form-control(type='checkbox' name='unlock')
+          div.form-group
+            label(for='reset') Reset:
+              input#unlock.form-control(type='checkbox' name='reset')
           button.btn.btn-primary(type='submit') Reset / Unlock Password
